@@ -7,7 +7,7 @@
 #
 # Host: 127.0.01 (MySQL 5.7.27)
 # Database: monsters
-# Generation Time: 2019-09-23 12:26:41 +0000
+# Generation Time: 2019-09-23 12:55:14 +0000
 # ************************************************************
 
 
@@ -25,9 +25,9 @@
 
 CREATE TABLE `monsters` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Name` varchar(50) DEFAULT NULL,
-  `Weapon` varchar(30) DEFAULT NULL,
-  `Challenge` float DEFAULT NULL,
+  `Name` varchar(50) NOT NULL DEFAULT '',
+  `Weapon` varchar(30) NOT NULL DEFAULT '',
+  `Challenge` float NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
