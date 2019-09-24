@@ -3,7 +3,7 @@
 $db = new PDO('mysql:host=db;dbname=monsters', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $query = $db->query('SELECT `Name`, `Weapon`, `Challenge` FROM `monsters`');
-$monsters = $query->fetchALL();
+$monsters = $query->fetchAll();
 
 foreach($monsters as $monster) {
     echo '<div>';
