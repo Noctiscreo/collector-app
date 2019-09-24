@@ -27,6 +27,16 @@ foreach($monsters as $monster) {
 
 <body>
 
+<form method="post" action="add-monster.php">
+    <h1>Add a New Monster</h1>
+    <h3>Monster Name</h3>
+    <input type="text" name="name">
+    <p>Weapon</p>
+    <input type="text" name="weapon">
+    <p>Challenge</p>
+    <input type="number" step="0.125" min="0.125" max="30" name="challenge">
+    <input type="submit" value="Add Monster">
+</form>
 </body>
 
 
