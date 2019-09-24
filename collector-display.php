@@ -3,7 +3,7 @@
 $db = new PDO('mysql:host=db;dbname=monsters', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $query = $db->query('SELECT `Name`, `Weapon`, `Challenge` FROM `monsters`');
-$monsters = $query->fetchALL();
+$monsters = $query->fetchAll();
 
 foreach($monsters as $monster) {
     echo '<div>';
@@ -27,7 +27,7 @@ foreach($monsters as $monster) {
 
 <body>
 
-<form method="post" action="add-monster.php">
+<form method="post" action="../WorkingWithFiles/add-monster.php">
     <h1>Add a New Monster</h1>
     <h3>Monster Name</h3>
     <input type="text" name="name">
