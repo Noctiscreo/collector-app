@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-image: url("paper.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0 10px 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 10px 0 0 10px;
+}
+
+p {
+    font-size: 2rem;
+    margin: 0px 0 0 10px;
+}
+
+.add h1 {
+    margin: 20px 0 10px 10px;
+}
+
+.add h3 {
+    margin: 0 0 0 10px;
+}
+
+.add p {
+    margin: 0 0 0 10px;
+}
+
+.add input {
+    margin: 0 0 0 10px;
+}
+
+.challenge {
+    width: 50px;
+}

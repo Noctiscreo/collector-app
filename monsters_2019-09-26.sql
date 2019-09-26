@@ -7,7 +7,7 @@
 #
 # Host: 127.0.01 (MySQL 5.7.27)
 # Database: monsters
-# Generation Time: 2019-09-23 12:55:14 +0000
+# Generation Time: 2019-09-26 13:45:45 +0000
 # ************************************************************
 
 
@@ -31,6 +31,23 @@ CREATE TABLE `monsters` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `monsters` WRITE;
+/*!40000 ALTER TABLE `monsters` DISABLE KEYS */;
+
+INSERT INTO `monsters` (`id`, `Name`, `Weapon`, `Challenge`)
+VALUES
+	(1,'Orc','Scimitar',0.5),
+	(2,'Bugbear','Morningstar',1),
+	(3,'Green Dragon','Breath',8),
+	(4,'Zombie','Slam',0.25),
+	(5,'Drider','Crossbow',6),
+	(6,'Kobold','Short Sword',0.125),
+	(7,'Ooze','Pseudopod',5),
+	(8,'Demon','Claws',6),
+	(9,'Mike','Sarcasm',0.125);
+
+/*!40000 ALTER TABLE `monsters` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 
