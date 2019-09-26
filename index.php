@@ -22,16 +22,16 @@ $monsters = $query->fetchAll();
 
 <?php echo monsterDisplay($monsters); ?>
 
-<form class="add" method="post" action="add-monster.php">
-    <h1>Add a New Monster</h1>
-    <h3>Name</h3>
-    <input type="text" name="name">
-    <p>Weapon</p>
-    <input type="text" name="weapon">
-    <p>Challenge</p>
-    <input class="challenge" type="number" step="0.125" min="0.125" max="30" name="challenge">
-    <input type="submit" value="Add Monster">
-</form>
+    <form class="add" method="post" action="add-monster.php">
+        <h1>Add a New Monster</h1>
+        <h3>Name</h3>
+        <input type="text" name="name">
+        <p>Weapon</p>
+        <input type="text" name="weapon">
+        <p>Challenge</p>
+        <input class="challenge" type="number" step="0.125" min="0.125" max="30" name="challenge">
+        <input type="submit" value="Add Monster">
+    </form>
 </body>
 
 
