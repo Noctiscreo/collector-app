@@ -9,3 +9,5 @@ Challenge = This is a number representing the difficulty of the monster killed. 
 There are a lot of limitations. The biggest is there is no delete button. Also there are no customizable fields, and the fields are limited in scope.
 
 As MVP however this hit the marks for the class project, and was a good introduction to using PHP with MySQL.
+
+*As with other personal projects on my Github, I upload the database info knowing it's for test purposes only and just to show my code to potential recruiters.
